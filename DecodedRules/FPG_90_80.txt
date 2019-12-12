@@ -1,0 +1,3 @@
+itemset support
+"SANI_2 ==> CATL_1" " 1400247 #CONF: 1.0"
+"CATL_1 ==> SANI_2" " 1400247 #CONF: 0.9695027466706917"

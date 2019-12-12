@@ -1,0 +1,4 @@
+itemset support
+CATL_1 1444294
+SANI_2 1400247
+"CATL_1 SANI_2" 1400247
