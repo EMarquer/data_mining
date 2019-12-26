@@ -1,9 +1,6 @@
 #!/bin/bash
-#
-#
-#
-#
-#
+
+# use Src/spmf_encoding.py to encode all the pattern files in Patterns
 
 mkdir -p DecodedRules
 
