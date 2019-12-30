@@ -6,7 +6,7 @@ import click
 
 
 
-    
+
 
 def read_attributes(f):
     """Read a list of attributes in a file"""
@@ -24,7 +24,7 @@ def is_an_interesting_rule(rule):
 
     - at least one person attribute on the left hand side of the rule
     - at least one housing attribute on the right hand side.
-    
+
     """
     valid_l_hand_side = any([attr in rule['left_hand_side'] for attr in PERSON_ATTR])
     valid_r_hand_side = any([attr in rule['right_hand_side'] for attr in HOUSING_ATTR])
@@ -37,7 +37,7 @@ def is_an_interesting_rule(rule):
 @click.argument('rules_out')
 def main(rules,rules_out):
     """ Take a csv of rules and returns the rule that we want to select """
-    
+
     df = pd.read_csv(rules,sep=" ",usecols=["itemset"])
     df['rules'] = df['itemset'].apply(lambda x: x.split("==>"))
     rules_df = pd.DataFrame()
@@ -56,5 +56,3 @@ def main(rules,rules_out):
 
 if __name__ == "__main__":
     main()
-
-
